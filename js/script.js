@@ -8,12 +8,16 @@ const wordList = ["html", "css", "javascript", "php"];
 
 function generateRandomWord() {
   let selectedWord = wordList[Math.floor(Math.random() * wordList.length)];
-  return selectedWord;
+  console.log(selectedWord);
 };
+
+// Array of DOM-nodes: Boxes where the letter shall be:
 
 function createLetterBoxes() {
   let letterBoxEls = document.querySelector('#letterBoxes > ul');
-  return letterBoxEls;
+  for (i = 0; i < selectedWord.length; i++) {
+    // letterBoxEls.appendChild("li" > "input");
+  }
 }
 
 
@@ -25,9 +29,7 @@ let msgHolderEl;     // DOM-nod: Ger meddelande när spelet är över
 
 // DOM-node: The button which starts the game:
 
-let startGameBtnEl = document.querySelector('#startGameBtn').addEventListener('click', function() {
-  console.log('stop pressing the start button');
-});
+let startGameBtnEl = document.querySelector('#startGameBtn').addEventListener('click', generateRandomWord());
 
 let letterButtonEls; // Array av DOM-noder: Knapparna för bokstäverna
 let letterBoxEls = document.querySelector('letterBoxes > ul');   // Array av DOM-noder: Rutorna där bokstäverna ska stå
