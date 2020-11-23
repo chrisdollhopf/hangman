@@ -36,7 +36,7 @@ X 1. Create a function, call it `generateRandomWord()`
 X 2. Create a function, name it `createLetterBoxes()`.
 
 X - Within this function:
-X   - Use `document.querySelector()` to retrieve `#letterBoxes > ul`, store it in the        variable `letterBoxEls`.
+X   - Use `document.querySelector()` to retrieve `#letterBoxes > ul`, store it in the    variable `letterBoxEls`.
     - Based on the length in `selectedWord`(loop/iterate):
       - create a new `<li>`- the element contains an `<input>`
     - Use `.appendChild()` to add the created element inside `letterBoxEls`
